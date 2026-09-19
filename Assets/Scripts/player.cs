@@ -11,11 +11,14 @@ public class player : MonoBehaviour
 
     public float maxYSpeed;
     public GameObject fireballPrefab;
+    private Animator animator;
+    bool isFlying;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.linearVelocityX = baseMovementSpeedX;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -40,7 +43,12 @@ public class player : MonoBehaviour
             rb.AddForce(transform.up * baseMovementSpeedY);
             // clamps the dragons max up speed
             if (rb.linearVelocityY > maxYSpeed) rb.linearVelocity = new Vector2(rb.linearVelocityX, maxYSpeed);
-        } 
+            isFlying = true;
+        } else
+        {
+            isFlying = false;
+        }
+        animator.SetBool("isFlying", isFlying);
 
         if (Keyboard.current.downArrowKey.isPressed)
         {
