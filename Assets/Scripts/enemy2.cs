@@ -40,7 +40,7 @@ public class enemy2 : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = true;
         }
         Debug.Log(distance);
-        if (distance < 5)
+        if (distance < 5 || turning >10)
         {
             GetComponent<Animator>().SetBool("Attack", true);
 
