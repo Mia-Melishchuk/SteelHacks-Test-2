@@ -7,6 +7,7 @@ public class player : MonoBehaviour
     public float accelForce;
     public Rigidbody2D rb;
     public float maxSpeed, minSpeed, upperBound;
+    public GameObject fireballPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,6 +44,13 @@ public class player : MonoBehaviour
         if (Keyboard.current.leftArrowKey.isPressed && rb.linearVelocityX > minSpeed)
         {
             rb.linearVelocityX -= accelForce;
+        }
+
+        // fire fireball :)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Debug.Log("Fire Away!");
+            Instantiate(fireballPrefab, transform.position + new Vector3(1f, -0.263f, 0), transform.rotation, transform);
         }
     }
 }
