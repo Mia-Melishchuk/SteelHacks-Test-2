@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,7 @@ public class player : MonoBehaviour
     public float maxSpeed, minSpeed, upperBound;
 
     public float maxYSpeed;
+    public GameObject fireballPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,6 +55,16 @@ public class player : MonoBehaviour
         if (Keyboard.current.leftArrowKey.isPressed && rb.linearVelocityX > minSpeed)
         {
             rb.linearVelocityX -= accelForce;
+        }
+
+        // fire fireball :)
+    }
+
+    void Update()
+    {
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Instantiate(fireballPrefab, transform.position + new Vector3(1f, -0.263f, 0), new Quaternion(0f, 0f, 0f, 0f), transform);
         }
     }
 }
