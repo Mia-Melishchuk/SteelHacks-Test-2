@@ -19,6 +19,7 @@ public class player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.linearVelocityX = baseMovementSpeedX;
         animator = GetComponent<Animator>();
+        fireballPrefab.gameObject.transform.localScale = transform.localScale/8.67f;
     }
 
     // Update is called once per frame
