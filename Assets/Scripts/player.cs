@@ -3,15 +3,17 @@ using UnityEngine.InputSystem;
 
 public class player : MonoBehaviour
 {
-    public float baseMovementSpeed;
+    public float baseMovementSpeedX, baseMovementSpeedY;
     public float accelForce;
     public Rigidbody2D rb;
     public float maxSpeed, minSpeed, upperBound;
+
+    public float maxYSpeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocityX = baseMovementSpeed;
+        rb.linearVelocityX = baseMovementSpeedX;
     }
 
     // Update is called once per frame
@@ -21,18 +23,26 @@ public class player : MonoBehaviour
         if (transform.position.y <= -upperBound)
         {
             transform.position = new Vector3(transform.position.x, -upperBound, transform.position.z);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         }
 
         // upper bound
         if (transform.position.y >= upperBound)
         {
             transform.position = new Vector3(transform.position.x, upperBound, transform.position.z);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         }
 
         if (Keyboard.current.upArrowKey.isPressed)
         {
-            print("flume");
-            rb.AddForce(transform.up * 30f);
+            rb.AddForce(transform.up * baseMovementSpeedY);
+            // clamps the dragons max up speed
+            if (rb.linearVelocityY > maxYSpeed) rb.linearVelocity = new Vector2(rb.linearVelocityX, maxYSpeed);
+        } 
+
+        if (Keyboard.current.downArrowKey.isPressed)
+        {
+            rb.AddForce(transform.up * -baseMovementSpeedY/2);
         } 
 
         if (Keyboard.current.rightArrowKey.isPressed && rb.linearVelocityX < maxSpeed)
