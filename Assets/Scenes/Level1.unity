@@ -519,6 +519,7 @@ MonoBehaviour:
   minSpeed: 0
   upperBound: 0
   fireballPrefab: {fileID: 0}
+  attackCooldown: 0
 --- !u!60 &1444403845
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1164,6 +1165,7 @@ MonoBehaviour:
   minSpeed: 4
   upperBound: 20
   fireballPrefab: {fileID: 2813380030091236646, guid: 7907a13d93351f94285f56d9fdec6bd7, type: 3}
+  attackCooldown: 1
 --- !u!50 &1893319859
 Rigidbody2D:
   serializedVersion: 5

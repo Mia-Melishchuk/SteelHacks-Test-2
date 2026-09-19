@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,9 @@ public class player : MonoBehaviour
     public Rigidbody2D rb;
     public float maxSpeed, minSpeed, upperBound;
     public GameObject fireballPrefab;
+    bool fireballOnCooldown = false;
+    public int attackCooldown;
+    float elapsedTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,7 +36,6 @@ public class player : MonoBehaviour
 
         if (Keyboard.current.upArrowKey.isPressed)
         {
-            print("flume");
             rb.AddForce(transform.up * 30f);
         } 
 
@@ -47,10 +50,13 @@ public class player : MonoBehaviour
         }
 
         // fire fireball :)
+    }
+
+    void Update()
+    {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            Debug.Log("Fire Away!");
-            Instantiate(fireballPrefab, transform.position + new Vector3(1f, -0.263f, 0), transform.rotation, transform);
+            Instantiate(fireballPrefab, transform.position + new Vector3(1f, -0.263f, 0), new Quaternion(0f, 0f, 0f, 0f), transform);
         }
     }
 }
