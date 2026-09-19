@@ -28,10 +28,11 @@ public class fireballSpawnerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        hitSomething = true;
-        animator.SetBool("hitSomething", hitSomething);
-        Task.Delay(100);
-        Destroy(gameObject);
+       
+            hitSomething = true;
+            animator.SetBool("hitSomething", hitSomething);
+            Task.Delay(100);
+            Destroy(gameObject);
     }
    
    
