@@ -45,4 +45,18 @@ public class player : MonoBehaviour
             rb.linearVelocityX -= accelForce;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            gameObject.SetActive(false);
+        }
+        //dies on spikes
+        if (collision.gameObject.CompareTag("spikes"))
+        {
+            gameObject.SetActive(false);
+        }
+
+    }
 }

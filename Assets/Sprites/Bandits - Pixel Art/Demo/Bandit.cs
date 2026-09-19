@@ -17,7 +17,7 @@ public class Bandit : MonoBehaviour {
     void Start () {
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
-        m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
+        //m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
     }
 	
 	// Update is called once per frame
