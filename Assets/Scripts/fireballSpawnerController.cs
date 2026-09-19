@@ -33,4 +33,6 @@ public class fireballSpawnerController : MonoBehaviour
         Task.Delay(100);
         Destroy(gameObject);
     }
+   
+   
 }
