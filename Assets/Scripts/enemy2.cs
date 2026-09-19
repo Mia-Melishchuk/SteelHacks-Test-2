@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class enemy2 : MonoBehaviour
@@ -5,11 +6,10 @@ public class enemy2 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Animator m_animator;
     private Rigidbody2D m_body2d;
-    private bool m_combatIdle = false;
-    private bool m_isDead = false;
     private int health = 100;
     public int attackdis = 2;
     public Transform playerTransform;
+    private Boolean dead = false;
     //private Collider2D collider1;
     public GameObject player = null;
     void Start()
@@ -35,12 +35,12 @@ public class enemy2 : MonoBehaviour
         //float distance = Vector2.Distance(transform.position, playerTransform.position);
         float distance = Mathf.Abs(player.transform.position.x - transform.position.x);
         float turning = (player.transform.position.x - transform.position.x);
-        if (turning > 0)
+        if (turning > 0 && dead==false)
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
         Debug.Log(distance);
-        if (distance < 5)
+        if (distance < 5 || turning >10)
         {
             GetComponent<Animator>().SetBool("Attack", true);
 
@@ -48,6 +48,26 @@ public class enemy2 : MonoBehaviour
         else
         {
             m_animator.SetBool("Attack", false);
+        }
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        //Dies to fireball
+        if (collision.gameObject.CompareTag("fireball"))
+        {
+            health = 0;
+            Debug.Log(health+ "This is the health");
+            if (health <= 0)
+            {
+                dead = true;
+                Debug.Log("dead");
+                m_animator.SetBool("Dead", true);
+                gameObject.tag = "dead";
+
+            }
+
         }
 
     }

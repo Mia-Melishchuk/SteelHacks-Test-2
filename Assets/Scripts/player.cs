@@ -73,7 +73,7 @@ public class player : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            Instantiate(fireballPrefab, transform.position + new Vector3(1f, -0.263f, 0), new Quaternion(0f, 0f, 0f, 0f), transform);
+            Instantiate(fireballPrefab, transform.position + new Vector3(3f, -0.263f, 0), new Quaternion(0f, 0f, 0f, 0f), transform);
         }
     }
 

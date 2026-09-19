@@ -11,12 +11,15 @@ public class enemy1 : MonoBehaviour
     private int health = 100;
     public int attackdis=2;
     public Transform playerTransform;
-    //private Collider2D collider1;
+    private Collider2D collider1;
     public GameObject player=null;
+    private bool dead = false;
+    public GameObject fireball;
     void Start()
     {
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
+        collider1 = GetComponent<Collider2D>();
         // collider1 = GetComponent<BoxCollider2D>(); if time can mess with
         //If you want to find it by TAG. For this you have to make sure you give your player object the tag "Player".
         if (player == null)
@@ -35,7 +38,12 @@ public class enemy1 : MonoBehaviour
         //float distance = player.get;
         //float distance = Vector2.Distance(transform.position, playerTransform.position);
         float distance = Mathf.Abs(player.transform.position.x - transform.position.x);
-        Debug.Log(distance);
+        float turning = (player.transform.position.x - transform.position.x);
+        if (turning > 0 && dead == false)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        //Debug.Log(distance);
         if (distance < 5) 
         {
               GetComponent<Animator>().SetBool("Attack", true);
@@ -43,9 +51,29 @@ public class enemy1 : MonoBehaviour
         } else {
             m_animator.SetBool("Attack", false);
         }
+
         
     }
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        //Dies to fireball
+        if (collision.gameObject.CompareTag("fireball"))
+        {
+            health = 0;
+           
+            if(health <= 0)
+            {
+                dead= true;
+                Debug.Log("dead");
+                m_animator.SetBool("Dead", true);
+                gameObject.tag = "dead";
+
+            }
+           
+        }
+
+    }
 
 
 }
