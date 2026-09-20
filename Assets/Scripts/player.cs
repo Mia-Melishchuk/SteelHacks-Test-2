@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,6 +16,7 @@ public class player : MonoBehaviour
     bool isFlying;
     public GameObject enemy1;
     public GameObject enemy2;
+    public GameObject gameOverText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -83,6 +85,7 @@ public class player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
+            gameOverText.gameObject.SetActive(true);
             gameObject.SetActive(false);
             enemy1.GetComponent<Animator>().SetBool("Attack", false);
             enemy2.GetComponent<Animator>().SetBool("Attack", false);
@@ -90,6 +93,7 @@ public class player : MonoBehaviour
         //dies on spikes
         if (collision.gameObject.CompareTag("spikes"))
         {
+            gameOverText.gameObject.SetActive(true);
             gameObject.SetActive(false);
         }
 
