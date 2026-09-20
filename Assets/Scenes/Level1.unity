@@ -294085,16 +294085,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
-      propertyPath: fireballPink
-      value: 
-      objectReference: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
       propertyPath: bulletPos
       value: 
       objectReference: {fileID: 516083941}
     - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 3782108914807028948, guid: 5c12eb3ca51ae4346a8bdd2f3db4c643, type: 3}
+    - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
+      propertyPath: fireballPink
+      value: 
+      objectReference: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
+    - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1893319862}
+    - target: {fileID: 4698998902694639909, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5533079892255946959, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
       propertyPath: m_Name
       value: wizard
@@ -294174,8 +294183,7 @@ SceneRoots:
   - {fileID: 103972458}
   - {fileID: 1968244066}
   - {fileID: 4875046703188728681}
-  - {fileID: 73672493}
-  - {fileID: 1750994661}
+  - {fileID: 516083941}
   - {fileID: 797842496}
   - {fileID: 1744490616}
-  - {fileID: 516083941}
+  - {fileID: 1750994661}
