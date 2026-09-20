@@ -11,9 +11,13 @@ public class Wizard : MonoBehaviour
     public Transform playerTransform;
     private Boolean dead = false;
     //private Collider2D collider1;
-    public GameObject fireball;
+    //public GameObject fireball;
     public GameObject player = null;
-    public GameObject fireballPink;
+    //public GameObject fireballPink;
+    public GameObject bullet;
+    public Transform bulletPos;
+    private float timer;
+    public float d;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -50,16 +54,27 @@ public class Wizard : MonoBehaviour
         }
 
 
+        //BUllET
+        d = Vector2.Distance(transform.position, player.transform.position);
+        Debug.Log(d);
+        if(d < 50 && dead!=true)
+        {
+            timer += Time.deltaTime;
+            if (timer > 2)
+            {
+                timer = 0;
+                shoot();
+            }
+        }
+        
+
     }
 
     void Update()
     {
 
-        // Instantiate(asteroidPrefab, transform.position, transform.rotation, transform);
-        for (int i=0; i<10; i++)
-        {
-            Instantiate(fireballPink, gameObject.transform.position, transform.rotation, transform);
-        }
+       
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -80,5 +95,10 @@ public class Wizard : MonoBehaviour
             }
 
         }
+    }
+    private void shoot()
+    {
+        Instantiate(bullet, bulletPos.position, Quaternion.identity);
+
     }
 }

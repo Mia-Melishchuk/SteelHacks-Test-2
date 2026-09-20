@@ -285162,6 +285162,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c2d36a110816cb4a917f0d0cb91d238, type: 3}
+--- !u!1 &73672492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 73672493}
+  - component: {fileID: 73672494}
+  m_Layer: 0
+  m_Name: spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &73672493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73672492}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.4, y: 8.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &73672494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73672492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c536588e2b805438346a3dded587c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::pink
+  moveSpeed: 0
+  firebolt: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
 --- !u!20 &85978783 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7499773971008514450, guid: b194f387f11bca8419828289d9e43b22, type: 3}
@@ -287839,37 +287885,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b476a16b9c81eb848bfd1edb69a582f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
---- !u!1 &516083940
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 516083941}
-  m_Layer: 0
-  m_Name: stuff
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &516083941
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516083940}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 507.9, y: 8.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &748159535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -289059,7 +289074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -365.0178, y: -209.30893}
+  m_AnchoredPosition: {x: -365.01782, y: -209.30893}
   m_SizeDelta: {x: -742.262, y: -431.983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711136594
@@ -293805,17 +293820,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-    - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
-      propertyPath: bulletPos
+      propertyPath: fireballPink
       value: 
-      objectReference: {fileID: 516083941}
+      objectReference: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
     - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
       propertyPath: playerTransform
       value: 
@@ -293899,5 +293910,5 @@ SceneRoots:
   - {fileID: 103972458}
   - {fileID: 1968244066}
   - {fileID: 4875046703188728681}
+  - {fileID: 73672493}
   - {fileID: 1744490616}
-  - {fileID: 516083941}
