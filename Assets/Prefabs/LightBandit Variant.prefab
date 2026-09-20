@@ -102,3 +102,4 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   player: {fileID: 0}
   fireball: {fileID: 2813380030091236646, guid: 7907a13d93351f94285f56d9fdec6bd7, type: 3}
+  coinPrefab: {fileID: 3782108914807028948, guid: 5c12eb3ca51ae4346a8bdd2f3db4c643, type: 3}
