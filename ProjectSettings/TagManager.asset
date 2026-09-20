@@ -7,6 +7,11 @@ TagManager:
   - spikes
   - player
   - enemy
+  - fireball
+  - Tutorial Prompt
+  - dead
+  - portal
+  - coin
   layers:
   - Default
   - TransparentFX

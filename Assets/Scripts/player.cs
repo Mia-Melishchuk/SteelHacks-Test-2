@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,11 +12,18 @@ public class player : MonoBehaviour
 
     public float maxYSpeed;
     public GameObject fireballPrefab;
+    private Animator animator;
+    bool isFlying;
+    public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject gameOverText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.linearVelocityX = baseMovementSpeedX;
+        animator = GetComponent<Animator>();
+        fireballPrefab.gameObject.transform.localScale = transform.localScale/8.67f;
     }
 
     // Update is called once per frame
@@ -40,7 +48,12 @@ public class player : MonoBehaviour
             rb.AddForce(transform.up * baseMovementSpeedY);
             // clamps the dragons max up speed
             if (rb.linearVelocityY > maxYSpeed) rb.linearVelocity = new Vector2(rb.linearVelocityX, maxYSpeed);
-        } 
+            isFlying = true;
+        } else
+        {
+            isFlying = false;
+        }
+        animator.SetBool("isFlying", isFlying);
 
         if (Keyboard.current.downArrowKey.isPressed)
         {
@@ -64,7 +77,7 @@ public class player : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            Instantiate(fireballPrefab, transform.position + new Vector3(1f, -0.263f, 0), new Quaternion(0f, 0f, 0f, 0f), transform);
+            Instantiate(fireballPrefab, transform.position + new Vector3(3f, -0.263f, 0), new Quaternion(0f, 0f, 0f, 0f), transform);
         }
     }
 
@@ -72,13 +85,24 @@ public class player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
+            gameOverText.gameObject.SetActive(true);
             gameObject.SetActive(false);
+            enemy1.GetComponent<Animator>().SetBool("Attack", false);
+            enemy2.GetComponent<Animator>().SetBool("Attack", false);
         }
         //dies on spikes
         if (collision.gameObject.CompareTag("spikes"))
         {
+            gameOverText.gameObject.SetActive(true);
             gameObject.SetActive(false);
         }
 
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("coin"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
