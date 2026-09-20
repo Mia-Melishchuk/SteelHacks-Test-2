@@ -18,6 +18,7 @@ public class Wizard : MonoBehaviour
     public Transform bulletPos;
     private float timer;
     public float d;
+    public GameObject coinPrefab;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -87,6 +88,9 @@ public class Wizard : MonoBehaviour
             if (health <= 0)
             {
                 dead = true;
+                Instantiate(coinPrefab, new Vector3(-4, 5f, 0) + transform.position, transform.rotation, transform);
+                Instantiate(coinPrefab, new Vector3(0, 5f, 0) + transform.position, transform.rotation, transform);
+                Instantiate(coinPrefab, new Vector3(4, 5f, 0) + transform.position, transform.rotation, transform);
                 Debug.Log("dead");
                 animator.SetBool("dead", true);
                 gameObject.tag = "dead";
