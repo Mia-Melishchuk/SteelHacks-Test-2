@@ -5,17 +5,18 @@ public class enemy2 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Animator m_animator;
-    private Rigidbody2D m_body2d;
+    private Rigidbody2D body2d;
     private int health = 100;
     public int attackdis = 2;
     public Transform playerTransform;
     private Boolean dead = false;
     //private Collider2D collider1;
+    public GameObject fireball;
     public GameObject player = null;
     void Start()
     {
         m_animator = GetComponent<Animator>();
-        m_body2d = GetComponent<Rigidbody2D>();
+        body2d = GetComponent<Rigidbody2D>();
         // collider1 = GetComponent<BoxCollider2D>(); if time can mess with
         //If you want to find it by TAG. For this you have to make sure you give your player object the tag "Player".
         if (player == null)
@@ -40,7 +41,7 @@ public class enemy2 : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = true;
         }
         Debug.Log(distance);
-        if (distance < 5 || turning >10)
+        if ((distance < 20 || turning >10) && player.activeSelf)
         {
             GetComponent<Animator>().SetBool("Attack", true);
 
@@ -48,7 +49,9 @@ public class enemy2 : MonoBehaviour
         else
         {
             m_animator.SetBool("Attack", false);
+            
         }
+        
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -65,7 +68,8 @@ public class enemy2 : MonoBehaviour
                 Debug.Log("dead");
                 m_animator.SetBool("Dead", true);
                 gameObject.tag = "dead";
-
+                gameObject.GetComponent<Collider2D>().enabled = false;
+                body2d.gravityScale = 0;
             }
 
         }
