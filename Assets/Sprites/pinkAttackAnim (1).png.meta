@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 9537d533a5063624aabbd4e0f37df4a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2109972645602604071
+    second: pinkAttackAnim (1)_0
+  - first:
+      213: 4610804608634066055
+    second: pinkAttackAnim (1)_1
+  - first:
+      213: -7617628031491386786
+    second: pinkAttackAnim (1)_2
+  - first:
+      213: 2515283111332129219
+    second: pinkAttackAnim (1)_3
+  - first:
+      213: -255367434369181703
+    second: pinkAttackAnim (1)_4
+  - first:
+      213: 5708429775658429979
+    second: pinkAttackAnim (1)_5
+  - first:
+      213: 4261440681814434672
+    second: pinkAttackAnim (1)_6
+  - first:
+      213: -5381397144810417504
+    second: pinkAttackAnim (1)_7
+  - first:
+      213: 1590466101124948066
+    second: pinkAttackAnim (1)_8
+  - first:
+      213: 6982164700819096942
+    second: pinkAttackAnim (1)_9
+  - first:
+      213: -1018544833681692335
+    second: pinkAttackAnim (1)_10
+  - first:
+      213: -7720299103337736926
+    second: pinkAttackAnim (1)_11
+  - first:
+      213: 1535423602251675331
+    second: pinkAttackAnim (1)_12
+  - first:
+      213: 2799469250734747111
+    second: pinkAttackAnim (1)_13
+  - first:
+      213: 2175321379818190647
+    second: pinkAttackAnim (1)_14
+  - first:
+      213: 2652794287074566898
+    second: pinkAttackAnim (1)_15
+  - first:
+      213: 2579734691755750878
+    second: pinkAttackAnim (1)_16
+  - first:
+      213: -7860179209151709210
+    second: pinkAttackAnim (1)_17
+  - first:
+      213: -2966702511382339015
+    second: pinkAttackAnim (1)_18
+  - first:
+      213: 92950866913807856
+    second: pinkAttackAnim (1)_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_0
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 475
+        width: 38
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7243fea21f0284d10800000000000000
+      internalID: 2109972645602604071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_1
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 464
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7841e5acc5edcff30800000000000000
+      internalID: 4610804608634066055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 310
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52d5ef4aafb84690800000000000000
+      internalID: -7617628031491386786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 355
+        width: 126
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9ad78c9a418e220800000000000000
+      internalID: 2515283111332129219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_4
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 278
+        width: 333
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7d833eba0c47cf0800000000000000
+      internalID: -255367434369181703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_5
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 339
+        width: 124
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e226be2aa683f40800000000000000
+      internalID: 5708429775658429979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_6
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 278
+        width: 324
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073a2f6d8bda32b30800000000000000
+      internalID: 4261440681814434672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 347
+        width: 89
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a216440fcf6155b0800000000000000
+      internalID: -5381397144810417504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 341
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2606ad80e78721610800000000000000
+      internalID: 1590466101124948066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_9
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 220
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6508936dc1a5e060800000000000000
+      internalID: 6982164700819096942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_10
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 217
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159e798ced66dd1f0800000000000000
+      internalID: -1018544833681692335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 231
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22599c19edcfbd490800000000000000
+      internalID: -7720299103337736926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 225
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c636f791abee4510800000000000000
+      internalID: 1535423602251675331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_13
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 142
+        width: 86
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed6ca98376b9d620800000000000000
+      internalID: 2799469250734747111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_14
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 82
+        width: 324
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7373064054b403e10800000000000000
+      internalID: 2175321379818190647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_15
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 127
+        width: 89
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2e347595e90d420800000000000000
+      internalID: 2652794287074566898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_16
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 81
+        width: 333
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed57adcb80f0dc320800000000000000
+      internalID: 2579734691755750878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 119
+        width: 124
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eff99f77a80be290800000000000000
+      internalID: -7860179209151709210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_18
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 105
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932ebceb8c724d6d0800000000000000
+      internalID: -2966702511382339015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkAttackAnim (1)_19
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 99
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd46fb225a3a4100800000000000000
+      internalID: 92950866913807856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a563583477b59e9459e01bcf5d3fbfd7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pinkAttackAnim (1)_0: 2109972645602604071
+      pinkAttackAnim (1)_1: 4610804608634066055
+      pinkAttackAnim (1)_10: -1018544833681692335
+      pinkAttackAnim (1)_11: -7720299103337736926
+      pinkAttackAnim (1)_12: 1535423602251675331
+      pinkAttackAnim (1)_13: 2799469250734747111
+      pinkAttackAnim (1)_14: 2175321379818190647
+      pinkAttackAnim (1)_15: 2652794287074566898
+      pinkAttackAnim (1)_16: 2579734691755750878
+      pinkAttackAnim (1)_17: -7860179209151709210
+      pinkAttackAnim (1)_18: -2966702511382339015
+      pinkAttackAnim (1)_19: 92950866913807856
+      pinkAttackAnim (1)_2: -7617628031491386786
+      pinkAttackAnim (1)_3: 2515283111332129219
+      pinkAttackAnim (1)_4: -255367434369181703
+      pinkAttackAnim (1)_5: 5708429775658429979
+      pinkAttackAnim (1)_6: 4261440681814434672
+      pinkAttackAnim (1)_7: -5381397144810417504
+      pinkAttackAnim (1)_8: 1590466101124948066
+      pinkAttackAnim (1)_9: 6982164700819096942
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

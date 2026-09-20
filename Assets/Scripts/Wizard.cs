@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Wizard : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Wizard : MonoBehaviour
     //private Collider2D collider1;
     public GameObject fireball;
     public GameObject player = null;
+    public GameObject fireballPink;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -49,6 +51,16 @@ public class Wizard : MonoBehaviour
 
 
     }
+
+    void Update()
+    {
+
+        // Instantiate(asteroidPrefab, transform.position, transform.rotation, transform);
+        for (int i=0; i<10; i++)
+        {
+            Instantiate(fireballPink, gameObject.transform.position, transform.rotation, transform);
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -68,6 +80,5 @@ public class Wizard : MonoBehaviour
             }
 
         }
-
     }
 }
