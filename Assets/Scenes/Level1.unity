@@ -289039,114 +289039,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778675178}
   m_CullTransparentMesh: 1
---- !u!1 &1744490613
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1744490616}
-  - component: {fileID: 1744490615}
-  - component: {fileID: 1744490614}
-  m_Layer: 5
-  m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1744490614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744490613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8117647, b: 0.88235295, a: 0.46666667}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1744490615
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744490613}
-  m_CullTransparentMesh: 1
---- !u!224 &1744490616
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744490613}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1769011, y: 1.1769011, z: 1.1769011}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1632192415}
-  m_Father: {fileID: 1349755047}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 19.73465, y: -89.281494}
-  m_SizeDelta: {x: -432.48694, y: -357.72202}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1752449100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8450164751738309489, guid: 18766cffec593ca4fa9f577f718a3b00, type: 3}
-  m_PrefabInstance: {fileID: 4659893145993226351}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1778675178
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1632192415}
-  - component: {fileID: 1632192417}
-  - component: {fileID: 1632192416}
-  - component: {fileID: 1778675180}
-  - component: {fileID: 1778675182}
-  m_Layer: 5
-  m_Name: GameOver
-  - component: {fileID: 1778675187}
-  - component: {fileID: 1778675179}
-  - component: {fileID: 1778675185}
-  - component: {fileID: 1778675184}
-  - component: {fileID: 1778675186}
-  m_Layer: 0
-  m_Name: 
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &1711136592
 GameObject:
   m_ObjectHideFlags: 0
@@ -289223,6 +289115,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711136592}
   m_CullTransparentMesh: 1
+--- !u!1 &1744490613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744490616}
+  - component: {fileID: 1744490615}
+  - component: {fileID: 1744490614}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1744490614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744490613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.8117647, b: 0.88235295, a: 0.46666667}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1744490615
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744490613}
+  m_CullTransparentMesh: 1
+--- !u!224 &1744490616
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744490613}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.1769011, y: 1.1769011, z: 1.1769011}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1632192415}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 19.73465, y: -89.281494}
+  m_SizeDelta: {x: -432.48694, y: -357.72202}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1778675178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1632192415}
+  - component: {fileID: 1632192417}
+  - component: {fileID: 1632192416}
+  - component: {fileID: 1778675180}
+  - component: {fileID: 1778675182}
+  m_Layer: 5
+  m_Name: GameOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!50 &1778675179
 Rigidbody2D:
   serializedVersion: 5
@@ -293834,7 +293822,11 @@ PrefabInstance:
     - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1752449100}
+      objectReference: {fileID: 0}
+    - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
+      propertyPath: fireballPink
+      value: 
+      objectReference: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
     - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
       propertyPath: playerTransform
       value: 
@@ -293919,3 +293911,4 @@ SceneRoots:
   - {fileID: 1968244066}
   - {fileID: 4875046703188728681}
   - {fileID: 73672493}
+  - {fileID: 1744490616}
