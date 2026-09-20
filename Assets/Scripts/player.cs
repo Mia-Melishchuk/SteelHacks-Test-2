@@ -73,13 +73,14 @@ public class player : MonoBehaviour
         // fire fireball :)
     }
 
-    void Update()
+    /*void Update()
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             Instantiate(fireballPrefab, transform.position + new Vector3(3f, -0.263f, 0), new Quaternion(0f, 0f, 0f, 0f), transform);
         }
     }
+    */
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
