@@ -8,6 +8,8 @@ TagManager:
   - player
   - enemy
   - fireball
+  - Tutorial Prompt
+  - dead
   layers:
   - Default
   - TransparentFX
