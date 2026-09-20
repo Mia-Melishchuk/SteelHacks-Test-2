@@ -6,7 +6,7 @@
 OR (for windows users)
 
 git clone https://github.com/Mia-Melishchuk/SteelHacks-Test-2/
-go to WindowsBuild/SteelHacks Test 2.exe
+\ngo to WindowsBuild/SteelHacks Test 2.exe
 
 ## A physics-based flying platformer
 
