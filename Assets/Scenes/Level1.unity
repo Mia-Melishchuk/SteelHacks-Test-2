@@ -285171,8 +285171,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 73672493}
+  - component: {fileID: 73672494}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285187,12 +285188,26 @@ Transform:
   m_GameObject: {fileID: 73672492}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 506.43, y: 7.92, z: 0}
+  m_LocalPosition: {x: 31.4, y: 8.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &73672494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73672492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c536588e2b805438346a3dded587c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::pink
+  moveSpeed: 0
+  firebolt: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
 --- !u!20 &85978783 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7499773971008514450, guid: b194f387f11bca8419828289d9e43b22, type: 3}
@@ -293262,63 +293277,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed9e098922373c0428929b66a7574dcf, type: 3}
---- !u!1001 &4177824384969456636
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 504.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471556320284873607, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
-      propertyPath: m_Name
-      value: pinkAttackAnim (1)_2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
 --- !u!1001 &4659893145993226351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -293504,5 +293462,4 @@ SceneRoots:
   - {fileID: 103972458}
   - {fileID: 1968244066}
   - {fileID: 4875046703188728681}
-  - {fileID: 4177824384969456636}
   - {fileID: 73672493}
