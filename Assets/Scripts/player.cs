@@ -17,6 +17,7 @@ public class player : MonoBehaviour
     public GameObject enemy1;
     public GameObject enemy2;
     public GameObject gameOverText;
+    int coinCounter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +25,7 @@ public class player : MonoBehaviour
         rb.linearVelocityX = baseMovementSpeedX;
         animator = GetComponent<Animator>();
         fireballPrefab.gameObject.transform.localScale = transform.localScale/8.67f;
+        coinCounter = 0;
     }
 
     // Update is called once per frame
@@ -103,7 +105,12 @@ public class player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("coin"))
         {
-            Destroy(gameObject);
+            coinCounter++;
         }
+    }
+
+    public int getCoins()
+    {
+        return coinCounter;
     }
 }

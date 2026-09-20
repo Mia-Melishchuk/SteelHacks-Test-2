@@ -105,7 +105,6 @@ GameObject:
   - component: {fileID: 7247464095988203654}
   - component: {fileID: 4551384030197472300}
   - component: {fileID: 130088913131641314}
-  - component: {fileID: 1236285158335822840}
   m_Layer: 0
   m_Name: HeavyBandit 1
   m_TagString: enemy
@@ -297,19 +296,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemy2
   attackdis: 2
   playerTransform: {fileID: 0}
+  fireball: {fileID: 0}
   player: {fileID: 0}
---- !u!114 &1236285158335822840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6998263329491653315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90d21c226df8e4749a795c7b0116a43d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::enemy2
-  attackdis: 2
-  playerTransform: {fileID: 0}
-  player: {fileID: 0}
+  coinPrefab: {fileID: 3782108914807028948, guid: 5c12eb3ca51ae4346a8bdd2f3db4c643, type: 3}

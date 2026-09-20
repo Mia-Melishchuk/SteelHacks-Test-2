@@ -13,6 +13,7 @@ public class enemy2 : MonoBehaviour
     //private Collider2D collider1;
     public GameObject fireball;
     public GameObject player = null;
+    public GameObject coinPrefab;
     void Start()
     {
         m_animator = GetComponent<Animator>();
@@ -69,6 +70,7 @@ public class enemy2 : MonoBehaviour
                 m_animator.SetBool("Dead", true);
                 gameObject.tag = "dead";
                 gameObject.GetComponent<Collider2D>().enabled = false;
+                Instantiate(coinPrefab, new Vector3(0, 5f, 0) + transform.position, transform.rotation, transform);
                 body2d.gravityScale = 0;
             }
 
