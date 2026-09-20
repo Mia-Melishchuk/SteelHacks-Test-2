@@ -1,5 +1,13 @@
 # The Lost Dragon
 
+## How To Open Game
+[Web Build](https://play.unity.com/en/games/59843b2d-ca29-4c82-9faa-1e1ab64df153/webbuild)
+
+OR (for windows users)
+
+git clone https://github.com/Mia-Melishchuk/SteelHacks-Test-2/
+go to WindowsBuild/SteelHacks Test 2.exe
+
 ## A physics-based flying platformer
 
 In our game, you're tasked with flying through a treacherous obstacle course, using your dextrous wing skills and fireball ability. Good luck!
