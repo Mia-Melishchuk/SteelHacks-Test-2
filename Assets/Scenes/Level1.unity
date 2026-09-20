@@ -283806,6 +283806,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 17, y: 66, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 81
+      m_TileSpriteIndex: 81
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 175
@@ -283970,7 +283980,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 5703f52edbf9f9443a6f9a1555f79943, type: 2}
   - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: 0aca3953e311ae849858aaf39b0b612f, type: 2}
-  - m_RefCount: 12
+  - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: bdbaff01b4260ab4ea0f7c109b0f9566, type: 2}
   - m_RefCount: 25
     m_Data: {fileID: 11400000, guid: c0b61ccda2e41354e89df065a1723732, type: 2}
@@ -284539,7 +284549,7 @@ Tilemap:
     m_Data: {fileID: 2924845841996278952, guid: 0b0ba242c6354d744b4524eb0fc98ee7, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: -1359269509225242498, guid: 0b0ba242c6354d744b4524eb0fc98ee7, type: 3}
-  - m_RefCount: 12
+  - m_RefCount: 13
     m_Data: {fileID: 3380610738826897902, guid: 0b0ba242c6354d744b4524eb0fc98ee7, type: 3}
   - m_RefCount: 25
     m_Data: {fileID: -3773681394836130601, guid: 0b0ba242c6354d744b4524eb0fc98ee7, type: 3}
@@ -284946,7 +284956,7 @@ Tilemap:
   - m_RefCount: 5
     m_Data: {fileID: 9052083678068739164, guid: 0b0ba242c6354d744b4524eb0fc98ee7, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 28355
+  - m_RefCount: 28356
     m_Data:
       e00: 1
       e01: 0
@@ -284965,13 +284975,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 28355
+  - m_RefCount: 28356
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -45, y: -49, z: 0}
-  m_Size: {x: 445, y: 112, z: 1}
+  m_Size: {x: 445, y: 116, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -287848,6 +287858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 516083941}
+  - component: {fileID: 516083942}
   m_Layer: 0
   m_Name: stuff
   m_TagString: Untagged
@@ -287864,12 +287875,25 @@ Transform:
   m_GameObject: {fileID: 516083940}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 507.9, y: 8.3, z: 0}
+  m_LocalPosition: {x: 506.6, y: 8.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &516083942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516083940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279f2075b7269534b95f4a175cc05382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::bulletscript
+  force: 30
 --- !u!1001 &748159535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -294017,7 +294041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247810382895214952, guid: 18766cffec593ca4fa9f577f718a3b00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 490
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4247810382895214952, guid: 18766cffec593ca4fa9f577f718a3b00, type: 3}
       propertyPath: m_LocalPosition.y
@@ -294085,12 +294109,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
-      propertyPath: fireballPink
-      value: 
-      objectReference: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
       propertyPath: bulletPos
       value: 
       objectReference: {fileID: 516083941}
+    - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
+      propertyPath: fireballPink
+      value: 
+      objectReference: {fileID: 8191281188519978262, guid: bb0dd8763bfd1a64aaf211a82c364353, type: 3}
     - target: {fileID: 136291321195727518, guid: 52ee63090608f6642acdf484bfc0e9f8, type: 3}
       propertyPath: playerTransform
       value: 
@@ -294174,7 +294199,6 @@ SceneRoots:
   - {fileID: 103972458}
   - {fileID: 1968244066}
   - {fileID: 4875046703188728681}
-  - {fileID: 73672493}
   - {fileID: 1750994661}
   - {fileID: 797842496}
   - {fileID: 1744490616}

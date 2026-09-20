@@ -1354,7 +1354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3833502236716193213, guid: 18766cffec593ca4fa9f577f718a3b00, type: 3}
       propertyPath: minSpeed
-      value: 0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3833502236716193213, guid: 18766cffec593ca4fa9f577f718a3b00, type: 3}
       propertyPath: accelForce
@@ -1489,7 +1489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -349.59998, y: -200.4}
+  m_AnchoredPosition: {x: -345, y: -147}
   m_SizeDelta: {x: -742.2621, y: -431.983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850612983
