@@ -13,6 +13,8 @@ public class player : MonoBehaviour
     public GameObject fireballPrefab;
     private Animator animator;
     bool isFlying;
+    public GameObject enemy1;
+    public GameObject enemy2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -82,6 +84,8 @@ public class player : MonoBehaviour
         if (collision.gameObject.CompareTag("enemy"))
         {
             gameObject.SetActive(false);
+            enemy1.GetComponent<Animator>().SetBool("Attack", false);
+            enemy2.GetComponent<Animator>().SetBool("Attack", false);
         }
         //dies on spikes
         if (collision.gameObject.CompareTag("spikes"))
@@ -89,5 +93,12 @@ public class player : MonoBehaviour
             gameObject.SetActive(false);
         }
 
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("coin"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

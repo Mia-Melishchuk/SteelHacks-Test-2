@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5465689267054814052}
   m_Layer: 0
   m_Name: DragonPlayer
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.67, y: -4.02, z: 0}
-  m_LocalScale: {x: 6.5437, y: 6.5437, z: 6.5437}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -161,9 +161,10 @@ MonoBehaviour:
   accelForce: 0.1
   rb: {fileID: 0}
   maxSpeed: 20
-  minSpeed: 4
-  upperBound: 20
+  minSpeed: 0.5
+  upperBound: 200
   maxYSpeed: 25
+  fireballPrefab: {fileID: 0}
 --- !u!60 &5465689267054814052
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -8,6 +8,9 @@ TagManager:
   - player
   - enemy
   - fireball
+  - dead
+  - portal
+  - coin
   layers:
   - Default
   - TransparentFX

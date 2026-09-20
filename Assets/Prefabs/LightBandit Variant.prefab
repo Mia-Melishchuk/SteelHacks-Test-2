@@ -12,6 +12,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightBandit Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1689866831511430, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805181885227780, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805181885227780, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805181885227780, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4805181885227780, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.047875
@@ -52,6 +68,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95346456782871180, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7072ccd3656f94c49956f003acb7e468, type: 2}
     m_RemovedComponents:
     - {fileID: 114850797635947820, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
     m_RemovedGameObjects: []
@@ -78,3 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 108d35f559ebf7c48ad55f947cd7f7b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemy1
+  attackdis: 0
+  playerTransform: {fileID: 0}
+  player: {fileID: 0}
+  fireball: {fileID: 2813380030091236646, guid: 7907a13d93351f94285f56d9fdec6bd7, type: 3}
